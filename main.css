@@ -50,3 +50,41 @@ button {
     background-color: rgb(209, 45, 45);
     color: #fff;
 }
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li {
+    max-width: 25%;
+    list-style: none;
+    position: relative;
+    max-height: 17.5rem;
+    overflow-y: hidden;
+}
+
+ul li img {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.overlay-image-link {
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all ease .5s;
+}
+
+.overlay-image-link a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul li:hover .overlay-image-link {
+    opacity: 1;
+}
